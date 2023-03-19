@@ -66,7 +66,8 @@
     "stylelint-selector-no-empty": "^1.0.9",
     "stylelint-selector-tag-no-without-class": "^2.0.5",
     "stylelint-stylus": "^0.18.0",
-    "stylelint-use-nesting": "^4.1.0"
+    "stylelint-use-nesting": "^4.1.0",
+    "tslib": "latest"
   },
   "peerDependencies": {
     "styelint": "^9.1.0 || ^14 || ^15"
