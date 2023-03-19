@@ -2,17 +2,17 @@
   "private": false,
   "name": "stylelint-config-so-pretty",
   "version": "0.0.1",
-  "description": "ESLint configuration for linting TS, JS, JSON, YAML, and TOML",
+  "description": "Stylelint configuration with strict settings",
   "license": "MIT",
   "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
   "homepage": "https://megabyte.space",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/megabyte-labs/eslint-config-strict-mode.git"
+    "url": "git+https://github.com/megabyte-labs/stylelint-config-so-pretty.git"
   },
   "bugs": {
     "email": "help@megabyte.space",
-    "url": "https://gitlab.com/megabyte-labs/npm/configs/eslint/-/issues"
+    "url": "https://gitlab.com/megabyte-labs/npm/configs/stylelint-config-so-pretty/-/issues"
   },
   "type": "commonjs",
   "main": "dist/main.js",
@@ -44,17 +44,46 @@
   },
   "typings": "dist/main.d.ts",
   "dependencies": {
-
-    "tslib": "latest"
+    "stylelint": "^15.3.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-sass-guidelines": "^10.0.0",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-css-modules": "^1.2.2",
+    "stylelint-css-modules-no-global-scoped-selector": "^1.0.2",
+    "stylelint-csstree-validator": "^2.1.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
+    "stylelint-declaration-strict-value": "^1.9.2",
+    "stylelint-gamut": "^1.3.1",
+    "stylelint-group-selectors": "^1.0.9",
+    "stylelint-high-performance-animation": "^1.8.0",
+    "stylelint-images": "^2.0.1",
+    "stylelint-no-nested-media": "^0.1.0",
+    "stylelint-no-unresolved-module": "^2.1.0",
+    "stylelint-no-unsupported-browser-features": "^6.1.0",
+    "stylelint-rem-over-px": "^1.0.0",
+    "stylelint-selector-no-empty": "^1.0.9",
+    "stylelint-selector-tag-no-without-class": "^2.0.5",
+    "stylelint-stylus": "^0.18.0",
+    "stylelint-use-nesting": "^4.1.0"
+  },
+  "peerDependencies": {
+    "styelint": "^9.1.0 || ^14 || ^15"
   },
   "peerDependenciesMeta": {
     "eslint": {
       "optional": true
+    },
+    "stylelint": {
+      "optional": true
     }
   },
+  "optionalDependencies": {},
   "devDependencies": {
     "@commitlint/config-conventional": "latest",
-    "esbuild": "^0.16.17",
+    "@types/node": "^16.11.6",
+    "esbuild": "^0.12.29",
     "esbuild-node-externals": "^1.3.0",
     "eslint-config-strict-mode": "latest",
     "git-cz-emoji": "latest",
@@ -63,29 +92,29 @@
     "prettier": "^2.4.1",
     "prettier-config-sexy-mode": "latest",
     "semantic-release-config": "latest",
-    "typescript": "^4.0.2"
+    "typescript": "^4.5.5"
   },
   "keywords": [
     "config",
+    "css",
     "editorconfig",
-    "stylelint",
-    "stylelint-config",
     "formatter",
-    "scss",
     "lint",
     "linter",
     "mblabs",
     "megabytelabs",
     "prettier",
     "professormanhattan",
-    "css",
+    "scss",
+    "stylelint",
+    "stylelint-config",
     "washingtondc"
   ],
   "engines": {
     "node": ">=18.4.0"
   },
   "publishConfig": {
-    "@gitlab:registry": "https://gitlab.com/api/v4/projects/30830469/packages/npm/",
+    "@gitlab:registry": "https://gitlab.com/api/v4/projects//packages/npm/",
     "@megabyte:registry": "https://gitlab.com/api/v4/projects/30830469/packages/npm/",
     "access": "public",
     "registry": "https://registry.npmjs.org/",
@@ -318,7 +347,7 @@
     "extends": "semantic-release-config"
   },
   "volta": {
-    "node": "18.4.0",
+    "node": "16.19.1",
     "yarn": "1.22.19"
   }
 }
