@@ -134,7 +134,10 @@
     "slug": "stylelint-config-so-pretty",
     "subgroup": "config",
     "subheader_description": "Stylelint config that incorporates all well-received Stylelint plugins",
-    "title": "Stylelint So Pretty"
+    "title": "Stylelint So Pretty",
+    "github_id": "R_kgDOJLbMgA",
+    "gitlab_project_id": "44437709",
+    "gitlab_group_id": "12165875"
   },
   "changelog": {
     "displayTypes": [
