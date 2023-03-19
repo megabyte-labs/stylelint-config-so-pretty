@@ -82,18 +82,18 @@
   },
   "optionalDependencies": {},
   "devDependencies": {
+    "@commitlint/config-conventional": "latest",
     "@types/node": "^16.11.6",
     "esbuild": "^0.12.29",
     "esbuild-node-externals": "^1.3.0",
     "eslint-config-strict-mode": "latest",
     "git-cz-emoji": "latest",
+    "handlebars-helpers": "latest",
     "jest-preset-ts": "latest",
     "prettier": "^2.4.1",
     "prettier-config-sexy-mode": "latest",
     "semantic-release-config": "latest",
-    "typescript": "^4.5.5",
-    "@commitlint/config-conventional": "latest",
-    "handlebars-helpers": "latest"
+    "typescript": "^4.5.5"
   },
   "keywords": [
     "config",
@@ -115,7 +115,7 @@
     "node": ">=18.4.0"
   },
   "publishConfig": {
-    "@gitlab:registry": "https://gitlab.com/api/v4/projects//packages/npm/",
+    "@gitlab:registry": "https://gitlab.com/api/v4/projects/44437709/packages/npm/",
     "@megabyte:registry": "https://gitlab.com/api/v4/projects/30830469/packages/npm/",
     "access": "public",
     "registry": "https://registry.npmjs.org/",
@@ -124,6 +124,9 @@
   "blueprint": {
     "customPackageName": "stylelint-config-so-pretty",
     "description": "Stylelint configuration with strict settings",
+    "github_id": "R_kgDOJLbMgA",
+    "gitlab_group_id": "12165875",
+    "gitlab_project_id": "44437709",
     "group": "npm",
     "name": "Stylelint So Pretty",
     "overview": "This [Stylelint](https://stylelint.io/) configuration package includes a generous number of Stylelint plugins. The default settings are meant to enforce strict design patterns for CSS / SCSS. Most of the plugins included by this configuration can be found on the [GitHub Awesome list for Stylelint](https://github.com/stylelint/awesome-stylelint). We try to include every well-known and well-received plugin. Then, we customize the settings to our liking. This package is maintained by Megabyte Labs. You can refer to the [Megabyte Labs Code Docs](https://megabyte.space/docs) to learn more about the design patterns we recommend there. You can use this configuration as is or customize it to your liking so you can have your own shared Stylelint configuration package by [forking this repository](https://github.com/megabyte-labs/stylelint-config-so-pretty/fork)!",
@@ -134,10 +137,7 @@
     "slug": "stylelint-config-so-pretty",
     "subgroup": "config",
     "subheader_description": "Stylelint config that incorporates all well-received Stylelint plugins",
-    "title": "Stylelint So Pretty",
-    "github_id": "R_kgDOJLbMgA",
-    "gitlab_project_id": "44437709",
-    "gitlab_group_id": "12165875"
+    "title": "Stylelint So Pretty"
   },
   "changelog": {
     "displayTypes": [
@@ -150,7 +150,9 @@
     "showAuthor": true
   },
   "commitlint": {
-    "extends": [],
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
     "helpUrl": "https://megabyte.space/docs/contributing/commits"
   },
   "eslintConfig": {
